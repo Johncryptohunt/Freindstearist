@@ -108,6 +108,21 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        .homepage-button {
+            display: block;
+            width: 89%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #444; /* Slightly lighter than the sidebar */
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            transition: background-color 0.3s;
+        }
+        .homepage-button:hover {
+            background-color: #555; /* Lighter background on hover */
+        }
     </style>
 </head>
 <body>
@@ -117,6 +132,7 @@
         <button onclick="showSection('artwork')">Art Work</button>
         <button onclick="showSection('artist')">Artist</button>
         <button onclick="showSection('contact')">Contact</button>
+        <a href="index.html" class="homepage-button">Homepage</a> <!-- Homepage button -->
     </div>
 
     <div class="content">
