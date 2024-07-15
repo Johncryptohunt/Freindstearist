@@ -45,7 +45,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 180px 20px 20px; /* Increased top padding for mobile */
+            padding: 220px 20px 20px; /* Increased top padding for mobile */
             gap: 30px; /* Increased gap between items */
         }
         .student {
@@ -56,7 +56,7 @@
             background-color: #fff;
             padding: 20px;
             border: 1px solid #ccc;
-            border-radius: 10%; /* Square shape */
+            border-radius: 10%; /* Rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             flex: 1 1 calc(33.333% - 60px); /* Adjusted for increased margin */
             box-sizing: border-box;
@@ -64,7 +64,7 @@
         }
         .student img {
             width: 80%; /* Enlarge image */
-            border-radius: 0; /* Square shape */
+            border-radius: 10%; /* Rounded corners */
             border: 2px solid #333; /* Solid border */
             transition: transform 0.2s; /* Transition for hover effect */
         }
@@ -72,7 +72,7 @@
             transform: scale(1.05); /* Slightly enlarge on hover */
         }
         .student a {
-             text-decoration: none;
+            text-decoration: none;
 			color: black; /* Color for links */
 			font-weight: bold;
 			margin-top: 10px;
@@ -82,6 +82,9 @@
 			background-color: #fff; /* White background */
 			font-family: 'Georgia', serif; /* Added font style */
 			transition: background-color 0.3s; /* Transition for hover effect */
+        }
+        .student a:hover {
+            background-color: #f0e1f8; /* Light background on hover */
         }
         .student:hover {
             transform: scale(1.02); /* Enlarge student block on hover */
@@ -135,7 +138,7 @@
         <div class="container">
             <div class="student">
                 <img src="sai/sai.jpg" alt="Student 1">
-                <a href="websai.html">sai </a>
+                <a href="websai.html">Sai</a>
             </div>
             <div class="student">
                 <img src="https://cdn.dribbble.com/userupload/4492884/file/original-f0aa223ca5513fa8af07e135703f050a.png?resize=752x" alt="Student 2">
