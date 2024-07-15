@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITS a Prank</title>
+    <style>
+        @keyframes blink {
+            0% { color: red; }
+            25% { color: blue; }
+            50% { color: green; }
+            75% { color: orange; }
+            100% { color: purple; }
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 6em; /* Double the size */
+            text-align: center;
+        }
+        .blink {
+            animation: blink 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="blink">ITS a Prank</div>
+</body>
+</html>
