@@ -1,0 +1,2 @@
+# Freindstearist
+oldfriendster
