@@ -6,29 +6,30 @@
     <title>SAN CAI MAGDARAOG WEBSITE</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        h1 {
-            color: Black;
+        body {
+            background-color: Gainsboro;
+            text-align: center; /* Center text */
         }
-        h3 {
+        h1, h3, h4, h5, h6, p {
             color: Black;
         }
         h4 {
-            color: Black;
             text-align: center;
         }
-        h5 {
-            color: Black;
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px; /* Space between images */
+            margin: 0 auto; /* Center the gallery */
         }
-        h6 {
-            text-align: center;
-            color: Black;
-        }
-        p {
-            color: Black;
+        .image-gallery img {
+            width: calc(33.33% - 10px); /* Adjust width for 3 images */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
-<body style="background-color:Gainsboro;">
+<body>
     <header>
         <h1>WELCOME TO SCM SITE</h1>
         <h3>San cai V. Magdaraog</h3>
@@ -45,40 +46,45 @@
         <section id="home">
             <h2>Home</h2>
             <h4>My 1st year Architectural Drafting Plates Gallery.</h4>
-            <img src="sai/1a.jpg" width="540" height="283">
-            <img src="sai/1b.jpg" width="540" height="283">
-            <img src="sai/1c.jpg" width="540" height="283">
-            <img src="sai/1d.jpg" width="540" height="283">
-            <img src="sai/1e.jpg" width="540" height="283">
-            <img src="sai/1f.jpg" width="540" height="283">
-            <img src="sai/1g.jpg" width="540" height="283">
-            <img src="sai/1h.jpg" width="540" height="283">
+            <div class="image-gallery">
+                <img src="sai/1a.jpg" alt="Drafting Plate 1">
+                <img src="sai/1b.jpg" alt="Drafting Plate 2">
+                <img src="sai/1c.jpg" alt="Drafting Plate 3">
+                <img src="sai/1d.jpg" alt="Drafting Plate 4">
+                <img src="sai/1e.jpg" alt="Drafting Plate 5">
+                <img src="sai/1f.jpg" alt="Drafting Plate 6">
+                <img src="sai/1g.jpg" alt="Drafting Plate 7">
+                <img src="sai/1h.jpg" alt="Drafting Plate 8">
+            </div>
 
             <h4>My 2nd year Architectural Drafting Plates Gallery.</h4>
-            <img src="sai/2a.jpg" width="540" height="283">
-            <img src="sai/2b.jpg" width="540" height="283">
-            <img src="sai/2c.jpg" width="540" height="283">
-            <img src="sai/2d.jpg" width="540" height="283">
-            <img src="sai/2e.jpg" width="540" height="283">
-            <img src="sai/2f.jpg" width="540" height="283">
+            <div class="image-gallery">
+                <img src="sai/2a.jpg" alt="Drafting Plate 1">
+                <img src="sai/2b.jpg" alt="Drafting Plate 2">
+                <img src="sai/2c.jpg" alt="Drafting Plate 3">
+                <img src="sai/2d.jpg" alt="Drafting Plate 4">
+                <img src="sai/2e.jpg" alt="Drafting Plate 5">
+                <img src="sai/2f.jpg" alt="Drafting Plate 6">
+            </div>
 
             <h4>My Digital Arts.</h4>
-            <img src="sai/3a.jpg" width="540" height="675">
-            <img src="sai/3b.jpg" width="540" height="675">
-            <img src="sai/3c.jpg" width="540" height="675">
-            <img src="sai/3c.jpg" width="540" height="675">
-            <img src="sai/3d.jpg" width="540" height="675">
-            <img src="sai/3e.jpg" width="540" height="675">
-            <img src="sai/3f.jpg" width="540" height="675">
-            <img src="sai/3g.jpg" width="540" height="675">
+            <div class="image-gallery">
+                <img src="sai/3a.jpg" alt="Digital Art 1">
+                <img src="sai/3b.jpg" alt="Digital Art 2">
+                <img src="sai/3c.jpg" alt="Digital Art 3">
+                <img src="sai/3d.jpg" alt="Digital Art 4">
+                <img src="sai/3e.jpg" alt="Digital Art 5">
+                <img src="sai/3f.jpg" alt="Digital Art 6">
+                <img src="sai/3g.jpg" alt="Digital Art 7">
+            </div>
         </section>
         <section id="about-me">
             <h2>About San cai</h2>
             <div class="center">
-                <img src="sai/sai.jpg" width="450" height="554">
+                <img src="sai/sai.jpg" width="450" height="554" alt="San Cai">
             </div>
             <p>Hello, I'm Sancai V. Magdaraog, a 21-year-old student at EARIST Cavite pursuing architectural drafting.</p>
-            <p>I used to adore drawing anime when I was younger, but I stopped drawing it and continued anyway, so I thought of myself as a never ending beginner when it came to digital art.</p>
+            <p>I used to adore drawing anime when I was younger, but I stopped drawing it and continued anyway, so I thought of myself as a never-ending beginner when it came to digital art.</p>
             <p>Away from the arts, I enjoy reading books and watching anime, which I find more entertaining than watching conventional performers on screen.</p>
             <p>Aside from that, I love music, and without it, my life would be complete chaos because I have to choose it each time I need a break from the demanding outside world.</p>
         </section>
