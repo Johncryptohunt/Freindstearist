@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #F5F1D0; /* Updated background color */
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #333; /* Dark color for the sidebar */
+            color: white;
+            position: fixed;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #444; /* Slightly lighter than the sidebar */
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            transition: background-color 0.3s;
+        }
+        .sidebar button:hover {
+            background-color: #555; /* Lighter background on hover */
+        }
+        .content {
+            margin-left: 20%; /* Space for the sidebar */
+            padding: 20px;
+            box-sizing: border-box;
+            width: 80%;
+        }
+        .content section {
+            display: none; /* Hide all sections by default */
+        }
+        .content section.active {
+            display: block; /* Show active section */
+        }
+        .profile-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .profile-text {
+            width: 60%;
+        }
+        .profile-text h1 {
+            color: #333;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .profile-text p {
+            color: #555;
+            font-size: 1.2em;
+            line-height: 1.6; /* Increased line spacing */
+        }
+        .profile-text .name {
+            color: #1e90ff; /* Blue color for Amirah's name */
+            font-size: 1.5em;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .profile-photo {
+            width: 35%;
+            text-align: center;
+        }
+        .profile-photo img {
+            width: 100%;
+            border-radius: 10px; /* Rounded corners for the photo */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .artwork-content, .artist-content {
+            margin-top: 20px;
+        }
+        .artwork-content h2, .artist-content h2 {
+            color: #333;
+            font-size: 2em;
+        }
+        .artwork-content p, .artist-content p {
+            color: #555;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .artwork-gallery,
+        .artist-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px; /* Add space above the images */
+        }
+        .artwork-gallery img,
+        .artist-gallery img {
+            width: 30%; /* Adjust to fit three images in a row */
+            margin-bottom: 10px; /* Space between rows */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <button onclick="showSection('profile')">Profile</button>
+        <button onclick="showSection('artwork')">Art Work</button>
+        <button onclick="showSection('artist')">Artist</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </div>
+
+    <div class="content">
+        <section id="profile" class="active">
+            <div class="profile-content">
+                <div class="profile-text">
+                    <h1>Hello!</h1>
+                    <p>My name is <span class="name">Amirah Tagle</span></p>
+                    <p>I'm a DRAFTING STUDENT</p>
+                    <p>I'm a Drafting student who loves diving into the wonderful world of Arts. My journey through school has been like an adventure, filled with exciting discoveries and fun challenges. I’m always eager to learn something new where I get to explore my interests and make amazing friends. With a heart full of enthusiasm and a mind ready to soak up knowledge, I can’t wait to see where my educational path will lead me next. Join me as I navigate the fascinating maze of learning and growth!</p>
+                </div>
+                <div class="profile-photo">
+                    <img src="C:\Users\QHTF\Desktop\btt.jpg" alt="Amirah Tagle">
+                </div>
+            </div>
+        </section>
+        
+        <section id="artwork">
+            <div class="artwork-content">
+                <h2>Art Work</h2>
+                <p>I'm thrilled to share my artwork with you, a reflection of my passion and creativity. Each piece is a journey of self-expression. Through my art, I strive to evoke feelings and tell stories that resonate with viewers. I hope you enjoy exploring my creations as much as I enjoyed bringing them to life.</p>
+                <div class="artwork-gallery">
+                    <img src="path/to/artwork1.jpg" alt="Artwork 1">
+                    <img src="path/to/artwork2.jpg" alt="Artwork 2">
+                    <img src="path/to/artwork3.jpg" alt="Artwork 3">
+                    <img src="path/to/artwork4.jpg" alt="Artwork 4">
+                    <img src="path/to/artwork5.jpg" alt="Artwork 5">
+                    <img src="path/to/artwork6.jpg" alt="Artwork 6">
+                </div>
+            </div>
+        </section>
+        
+        <section id="artist">
+            <div class="artist-content">
+                <h2>Artist</h2>
+                <p>There's more to my creative journey! Besides being passionate about visual arts, I can sing and act as well. I graduated in Francisco E. Barzaga Integrated High School, Arts and Design, majoring in Theater Arts, which has given me the incredible opportunity to perform on stage.</p>
+                <p>Whether it's through painting, singing, or acting, I love to explore and express my creativity in various forms. Each medium offers a unique way to convey my thoughts and emotions, and I find immense joy in bringing my artistic visions to life.</p>
+                <div class="artist-gallery">
+                    <img src="path/to/journey1.jpg" alt="Journey 1">
+                    <img src="path/to/journey2.jpg" alt="Journey 2">
+                    <img src="path/to/journey3.jpg" alt="Journey 3">
+                    <img src="path/to/journey4.jpg" alt="Journey 4">
+                    <img src="path/to/journey5.jpg" alt="Journey 5">
+                    <img src="path/to/journey6.jpg" alt="Journey 6">
+                    <img src="path/to/journey7.jpg" alt="Journey 7">
+                    <img src="path/to/journey8.jpg" alt="Journey 8">
+                    <img src="path/to/journey9.jpg" alt="Journey 9">
+                    <img src="path/to/journey10.jpg" alt="Journey 10">
+                    <img src="path/to/journey11.jpg" alt="Journey 11">
+                    <img src="path/to/journey12.jpg" alt="Journey 12">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to connect, feel free to reach out:</p>
+            <p>Facebook: <a href="https://www.facebook.com/yourprofile" target="_blank">Your Profile</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/yourprofile" target="_blank">Your Profile</a></p>
+            <p>Address: 서울시 마포구 상수동 23-1번지 seoulsi mapogu sangsudong 23-1beonji – Seoul 23-1, Mapo-gu, Sangsu-dong</p>
+        </section>
+    </div>
+
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('.content section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
