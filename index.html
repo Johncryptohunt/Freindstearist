@@ -3,83 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friendsterist - Student Profiles</title>
+    <title>Suman ng Dasma - Student Profiles</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: Gainsboro;
+            background-color: #DCC6E0; /* Light maroon */
             margin: 0;
             padding: 0;
         }
         header {
             text-align: center;
-            margin: 20px 0;
-            padding: 20px;
+            padding: 10px;
             background-color: #fff;
-            border: 2px solid #ccc;
-            border-radius: 10px;
+            border-bottom: 2px solid #ccc;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed; /* Fix the header */
+            width: 100%; /* Full width */
+            top: 0; /* Align to top */
+            z-index: 1000; /* Ensure it stays above other content */
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 3em; /* Increased font size */
             margin: 0;
-            color: #333;
+            color: #6A1B9A; /* Elegant color */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow */
         }
         h2 {
-            font-size: 1.5em;
+            font-size: 1.8em; /* Increased font size */
             margin: 10px 0;
-            color: #555;
+            color: #8E24AA; /* Elegant color */
         }
-        nav {
+        .quote {
+            text-align: center;
+            font-style: italic;
+            color: #777;
+            margin: 10px 0;
+            font-size: 1.2em; /* Slightly larger font size */
+            padding: 0 10px; /* Add horizontal padding */
+        }
+        .container {
             display: flex;
-            justify-content: center;
-            gap: 15px;
             flex-wrap: wrap;
-            margin-top: 15px;
+            justify-content: center;
+            padding: 180px 20px 20px; /* Increased top padding for mobile */
+            gap: 30px; /* Increased gap between items */
         }
-        nav a {
+        .student {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px; /* Increased margin for more space */
+            background-color: #fff;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 0; /* Square shape */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 60px); /* Adjusted for increased margin */
+            box-sizing: border-box;
+            transition: transform 0.2s; /* Transition for hover effect */
+        }
+        .student img {
+            width: 80%; /* Enlarge image */
+            border-radius: 0; /* Square shape */
+            border: 2px solid #333; /* Solid border */
+            transition: transform 0.2s; /* Transition for hover effect */
+        }
+        .student img:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+        .student a {
             text-decoration: none;
             color: black;
             font-weight: bold;
-            padding: 5px 10px;
-            border: 2px solid transparent;
-            border-radius: 5px;
-            transition: border-color 0.3s, background-color 0.3s;
+            margin-top: 20px;
         }
-        nav a:hover {
-            border-color: #333;
-            background-color: #f0f0f0;
+        .student:hover {
+            transform: scale(1.02); /* Enlarge student block on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
         }
-        main {
+        .footer {
             text-align: center;
-            padding: 20px;
+            margin: 5px 0; /* Margin above and below */
+            padding: 5px; /* Smaller padding */
+            font-size: 0.9em; /* Smaller font size for footer */
+            color: #999; /* Lighter color */
+            background-color: #DCC6E0; /* Matching background */
+            border-top: 2px solid #ccc; /* Top border */
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #777;
+        .footer hr {
+            border: none; 
+            border-top: 1px solid #ccc; /* Underline effect */
+            margin: 0; /* Remove margin */
+        }
+        @media (orientation: landscape) {
+            .container {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                padding-top: 220px; /* Additional padding for mobile */
+            }
+            .student {
+                width: 80%; /* Make student blocks smaller in portrait */
+                margin-top: 10px;
+            }
+            .quote {
+                font-size: 1em; /* Smaller font size for mobile */
+                padding: 0 5px; /* Adjust padding for smaller screens */
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Friendsterist</h1>
+        <h1>Suman ng Dasma</h1>
         <h2>Student Profiles</h2>
-        <nav>
-            <a href="websai.html">Sai</a>
-            <a href="profile2.html">amirah</a>
-            <a href="profile3.html">Student 3</a>
-            <a href="profile4.html">Student 4</a>
-            <a href="profile5.html">Student 5</a>
-            <a href="profile6.html">Student 6</a>
-        </nav>
+        <p class="quote">"Every great architect started as a drafter with a dream."</p>
     </header>
     <main>
-        <h3>Welcome to the Friendstearist community!</h3>
-        <p>Explore the profiles of our talented students.</p>
+        <div class="container">
+            <div class="student">
+                <img src="sai/sai.jpg" alt="Student 1">
+                <a href="profile1.html">sai </a>
+            </div>
+            <div class="student">
+                <img src="https://cdn.dribbble.com/userupload/4492884/file/original-f0aa223ca5513fa8af07e135703f050a.png?resize=752x" alt="Student 2">
+                <a href="profile2.html">Student 2</a>
+            </div>
+            <div class="student">
+                <img src="https://cdn.dribbble.com/userupload/4492884/file/original-f0aa223ca5513fa8af07e135703f050a.png?resize=752x" alt="Student 3">
+                <a href="profile3.html">Student 3</a>
+            </div>
+            <div class="student">
+                <img src="https://cdn.dribbble.com/userupload/4492884/file/original-f0aa223ca5513fa8af07e135703f050a.png?resize=752x" alt="Student 4">
+                <a href="profile4.html">Student 4</a>
+            </div>
+            <div class="student">
+                <img src="https://cdn.dribbble.com/userupload/4492884/file/original-f0aa223ca5513fa8af07e135703f050a.png?resize=752x" alt="Student 5">
+                <a href="profile5.html">Student 5</a>
+            </div>
+            <div class="student">
+                <img src="https://cdn.dribbble.com/userupload/4492884/file/original-f0aa223ca5513fa8af07e135703f050a.png?resize=752x" alt="Student 6">
+                <a href="profile6.html">Student 6</a>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2024 Friendsterist. All rights reserved.</p>
+    <footer class="footer">
+        <hr>
+        <p>Students of Earist Cavite</p>
+        <p>School Year: 2023 - 2024</p>
     </footer>
 </body>
 </html>
